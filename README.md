@@ -1,0 +1,2 @@
+# namahnest
+Om Namashivaya Namaga 
