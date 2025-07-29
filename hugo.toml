@@ -1,0 +1,20 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Hubstream'
+theme = 'chatBot'
+canonifyURLs = true
+
+[params]
+  description = 'Cybamatica: AI-powered cybersecurity solutions for proactive, automated, and scalable digital protection.'
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    style = "github"
+    useClasses = false
+    lineNos = false
+    codeFences = true  # Ensure code block fences are enabled
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      attribute = true
+
