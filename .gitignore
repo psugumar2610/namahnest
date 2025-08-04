@@ -1,9 +1,0 @@
-# Hugo build output
-public/
-
-# IDE-specific
-.vscode/
-.idea/
-
-# Node modules
-node_modules/
