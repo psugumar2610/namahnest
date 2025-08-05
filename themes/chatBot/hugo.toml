@@ -1,0 +1,33 @@
+baseURL = "https://example.org/"
+languageCode = "en-us"
+title = "Dynamic Hugo Menu Example"
+canonifyURLs = false
+
+[menu]
+
+
+  [[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+  [[menu.main]]
+  name = "Temple"
+  url = "/solutions"
+  weight = 30
+
+  [[menu.main]]
+  name = "Ashta Lingam"
+  url = "/blog"
+  weight = 20
+
+  [[menu.main]]
+  name = "Thiruvasagam"
+  url = "/swamy.songs"
+  weight = 40
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+
+
