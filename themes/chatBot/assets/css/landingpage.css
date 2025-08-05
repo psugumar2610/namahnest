@@ -1,0 +1,430 @@
+/* ==========================================================================
+   Author: Devarajan, Sugumar Parthasarathy
+   Description: Custom CSS for Home Page styling.
+========================================================================== */
+
+/* header style start here */
+
+.cybamatica-brand-logo {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.header {
+    position: relative;
+}
+
+.header .navbar {
+    background: none;
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    height: 0px;
+    min-height: 0px;
+}
+
+.header .navbar-collapse {
+    padding: 0;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .nav li {
+    float: left;
+    position: relative;
+    margin-right: 15px;
+}
+
+.header .nav li:last-child {
+    margin: 0;
+}
+
+.header .nav li a {
+    display: inline-block;
+    position: relative;
+    color: var(--block-color);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 25px 5px;
+    letter-spacing: 0.5px;
+}
+
+.header .nav li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background: var(--secondary-color);
+    border-radius: 5px 5px 0 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.header .nav li.active a:before,
+.header .nav li:hover a:before {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+}
+
+.header .nav li.active a,
+.header .nav li:hover a {
+    color: var(--secondary-color);
+}
+
+.navigation .nav li a[id="Get Started"]{
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    color: var(--white-color);;
+    padding: 11px 18px;
+    margin-top: 13px;
+}
+
+/* header style end here */
+
+/* Hero Banner Module Start Here */
+
+.main-layout-wrapper {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.hero-banner .main-layout-wrapper .banner-title{
+    line-height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-banner .main-layout-wrapper .banner-subtitle {
+    line-height: 2.3rem;
+    margin-right: 5.5rem;
+    margin-top: 16px;
+}
+
+.article-content-wrapper .button-container {
+    margin-top: 35px;
+}
+
+/* Hero Banner Module End Here */
+
+.home-half-canvas {
+    position: relative;
+}
+
+.home-half-canvas::before {
+    content: ' ';
+    top: -1px;
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    /* background: var(--primary-color); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 25%);
+}
+
+.cards-container .card {
+    /* box-shadow: 0 0px 9px rgba(0, 0, 0, 0.25); */
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 200px;
+    min-height: 200px;
+    border: 1px solid #cccccc;
+}
+
+/* Hero Banner Module End Here */
+
+/* Lets Started Module End Here */
+
+.how-it-wroks-section {
+   margin: 0 14%;
+}
+
+.how-it-wroks-section .card {
+    background: var(--white-color);
+    cursor: pointer;
+}
+
+.how-it-wroks-section .card:hover {
+    background: #FFD161;
+}
+
+.two-layout-card .cards-container .card {
+    min-height: 500px;
+    max-height: 500px;
+    padding: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-it-wroks-section .card-title{
+    /* width: 75%; */
+    margin: 0 auto;
+}
+
+.how-it-wroks-section h5 {
+    line-height: 38px;
+}
+
+.how-it-wroks-section p {
+    font-size: 16px;
+    font-weight: var(--font-weight-sm-semibold);
+    line-height: 28px;
+    display: none;
+}
+
+.how-it-wroks-section .card:hover p {
+    display: block;
+}
+
+/* .how-it-wroks-section .animate-top {
+        transition: top 0.4s ease-in-out;
+    top: 0;
+    position: relative;
+}
+
+.how-it-wroks-section .card:hover .animate-top {
+    top: -10px;
+    transition: top 0.4s ease-in-out;
+} */
+
+
+/* Lets Started Module End Here */
+
+.footer-section {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 24px;
+    text-align: left;
+}
+
+/* Solution Page Start here */
+
+.solutions-page .card-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    line-height: inherit;
+}
+
+.solutions-page  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px;
+}
+.solutions-page  .features li {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.solutions-page  .features li img {
+    width: 27px;
+    height: 27px;
+    margin-right: 10px;
+}
+
+/* Solution Page End here */
+
+/* Read our blog start here*/
+
+.cm-card {
+    min-height: 340px;
+    padding: 10px;
+    border-radius: 0;
+    border: 1px solid #3333;
+    /* border-bottom-left-radius: 6px; */
+    /* border-bottom-right-radius: 6px; */
+    /* border-top: 0; */
+    border-radius: 10px;
+}
+
+.cm-tag {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 6px 6px 0 0;
+  width: 100%;
+}
+
+.cm-title {
+  margin: 0 0 12px 0;
+  line-height: 35px;
+}
+
+.cm-divider {
+  border: none;
+  border-top: 1px solid var(--grey-color);
+  margin: 12px 0;
+}
+
+.cm-description {
+  margin-bottom: 16px;
+}
+
+.home-blogs-section .custom-cards-height {
+    min-height: 310px;
+    max-height: 310px;
+}
+
+/* Read our blog end here*/
+
+/* Solution Page styles start here */
+
+.cm-solution-card {
+    display: flex;
+    border: 1.7px solid var(--grey-color);
+    border-radius: 16px;
+    background: var(--white-color);
+    margin-bottom: 45px;
+}
+
+.cm-solution-card-v1 .card-content{
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d2cbcb;
+}
+
+h6.cm-sol-bottom-info {
+line-height: 40px;
+font-size: 20px;
+}
+
+.solutions-page .card-content {
+    flex: 1;
+    padding: 40px;
+}
+
+.solutions-page .card-image {
+    flex: 1;
+    max-width: 48%;
+}
+.solutions-page  .card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Solution Page styles end here */
+
+/* Landing Page styles start here */
+
+.cm-footer {
+  padding: 1rem 2rem;
+  border-top: 1px solid var(--black-color);
+  font-size: 0.875rem;
+}
+
+.cm-footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cm-footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cm-footer-left img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.cm-footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+.cm-footer-right a {
+  text-decoration: underline;
+}
+
+/* Landing Page styles end here */
+
+/* Hedaer Mobile style CSS start here*/
+
+.header {
+     width: 100%;
+     background: var(--white-color);
+     z-index: 999;
+}
+
+.mobile-menu-toggle {
+     background: none;
+     border: none;
+     font-size: 2rem;
+     cursor: pointer;
+     padding: 5px 10px;
+     position: relative;
+     width: 30px;
+     height: 30px;
+     float: right;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 1px;
+     background-color: var(--block-color);
+     left: 0;
+     transition: all 0.4s ease;
+}
+
+.menu-icon {
+     top: 50%;
+     transform: translateY(-50%);
+}
+
+.menu-icon::before {
+     top: -12px;
+}
+
+.menu-icon::after {
+     bottom: -12px;
+}
+
+/* Animation when menu is open */
+.mobile-menu-toggle.open .menu-icon {
+     background-color: transparent;
+}
+
+.mobile-menu-toggle.open .menu-icon::before {
+     top: 0;
+     transform: rotate(45deg);
+}
+
+.mobile-menu-toggle.open .menu-icon::after {
+     bottom: 0;
+     transform: rotate(-45deg);
+}
+
+.mobile-menu {
+     max-height: 0;
+     overflow: hidden;
+     background-color: var(--white-color);
+     transition: max-height 0.4s ease;
+}
+
+.mobile-menu.open {
+     max-height: 500px; /* Enough height for menu items */
+}
+
+/* Hedaer Mobile style CSS end here*/
+
+

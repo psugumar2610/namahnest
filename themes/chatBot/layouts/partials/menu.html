@@ -1,0 +1,13 @@
+<ul class="nav menu" style="justify-content: end;">
+    {{ $menuID := .menuID }} {{ with index site.Menus $menuID }} {{ range . }}
+    <li><a href="{{ .URL }}" id="{{ .Name }}">{{ .Name }}</a></li>
+    {{ end }} {{ else }}
+    <li>No menu found</li>
+
+    {{ end }}
+    <!-- <li>
+        <div class="btn header-gs-btn">
+            Get Started
+        </div>
+    </li> -->
+</ul>

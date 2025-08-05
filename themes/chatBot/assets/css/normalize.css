@@ -1,0 +1,210 @@
+/* ==========================================================================
+   Author: Devarajan, Sugumar Parthasarathy
+   Description: Custom CSS & Declaration for all styling.
+========================================================================== */
+
+/* Variables */
+:root {
+    --primary-color: #3C5A99;
+    --secondary-color: #FFA500;
+    --black-color: #000000;
+    --offwhite-color: #faf9f6;
+    --white-color: #ffffff;
+    --grey-color: #717171;
+    --color-gray-900: #333333;
+
+    /* Code Custom-color styles */
+    --github-color: #e3116c;
+    --code-block-color: #0000ff;
+    --code-bg-color: #eeeeee;
+    --code-header-color: #e0e0e0;
+
+    /* typography */
+
+    --font-size-xl-bold: 48px;
+    --font-weight-xl-bold: 700;
+
+    --font-size-lg-regular: 42px;
+    --font-weight-lg-regular: 700;
+
+    --font-size-md-regular: 32px;
+    --font-weight-md-regular: 600;
+
+    --font-size-md-semibold: 32px;
+    --font-weight-md-semibold: 400;
+
+    --font-size-sm-regular: 24px;
+    --font-weight-sm-regular: 600;
+
+    --font-size-sm-semibold: 24px;
+    --font-weight-sm-semibold: 400;
+
+    --font-size-xs-regular: 16px;
+    --font-weight-xs-regular: 400;
+
+    --font-size-xxs-regular: 14px;
+    --font-weight-xxs-regular: 400;
+
+    --font-size-xs-semibold: 14px;
+    --font-weight-xs-semibold: 600;
+}
+
+html body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    background-color: var(--offwhite-color);
+    scroll-behavior: smooth;
+}
+
+/* Fallback for global font enforcement */
+* {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Override Bootstrap font-family globally */
+body, html, .container, .row, .col, .btn, .form-control, .navbar, .dropdown-menu, .modal-content, .card, .table, .alert, .badge, .breadcrumb, .pagination, .progress, .list-group, .input-group, .custom-control, .custom-select, .nav, .navbar-nav, .navbar-brand, .navbar-toggler, .navbar-collapse, .navbar-text, .navbar-link, .dropdown-item, .dropdown-toggle, .dropdown-divider, .dropdown-header, .dropdown-menu, .modal, .modal-dialog, .modal-content, .modal-header, .modal-body, .modal-footer, .close, .popover, .tooltip, .carousel, .carousel-inner, .carousel-item, .carousel-caption, .carousel-control-prev, .carousel-control-next, .carousel-indicators, .jumbotron, .media, .media-body, .embed-responsive, .embed-responsive-item, .figure, .figure-img, .figure-caption, .img-fluid, .img-thumbnail, .img-circle, .img-rounded, .img-responsive, .lead, .display-1, .display-2, .display-3, .display-4, .small, .mark, .blockquote, .blockquote-footer, .pre-scrollable, .text-monospace, .text-justify, .text-nowrap, .text-truncate, .text-uppercase, .text-lowercase, .text-capitalize, .font-weight-bold, .font-weight-bolder, .font-weight-normal, .font-weight-light, .font-weight-lighter, .font-italic, .text-primary, .text-secondary, .text-success, .text-danger, .text-warning, .text-info, .text-light, .text-dark, .text-body, .text-muted, .text-white, .text-black-50, .text-white-50 {
+    font-family: 'Inter', sans-serif !important;
+}
+
+body a,
+body a:hover {
+    text-decoration: none;
+}
+
+body button:focus {
+    outline: none;
+}
+
+.color-primary    { color: var(--primary-color); }
+.bg-color-primary { background-color: var(--primary-color); }
+.color-secondary  { color: var(--secondary-color); }
+.bg-color-secondary { background-color: var(--secondary-color); }
+.color-black      { color: var(--black-color); }
+.bg-color-black   { background-color: var(--black-color); }
+.color-offwhite   { color: var(--offwhite-color); }
+.bg-color-offwhite { background-color: var(--offwhite-color); }
+.color-white      { color: var(--white-color); }
+.bg-color-white   { background-color: var(--white-color); }
+.color-tertiary   { color: var(--tertiary-color); }
+.bg-color-tertiary { background-color: var(--tertiary-color); }
+.color-grey       { color: var(--grey-color); }
+.bg-color-grey    { background-color: var(--grey-color); }
+.color-gray-900 { color: var(--color-gray-900); }
+
+/* Headings with your font-size and weight combos */
+
+/* h1: 48px, 700 */
+body h1 {
+    font-size: var(--font-size-xl-bold);
+    font-weight: var(--font-weight-xl-bold);
+}
+
+/* h2: 42px, 700 */
+body h2 {
+    font-size: var(--font-size-lg-regular);
+    font-weight: var(--font-weight-lg-regular);
+}
+
+/* h3: 32px, 600 */
+body h3 {
+    font-size: var(--font-size-md-regular);
+    font-weight: var(--font-weight-md-regular);
+}
+
+/* h4: 32px, 400 */
+body h4 {
+    font-size: var(--font-size-md-semibold);
+    font-weight: var(--font-weight-md-semibold);
+}
+
+/* h5: 24px, 600 */
+body h5 {
+    font-size: var(--font-size-sm-regular);
+    font-weight: var(--font-weight-sm-regular);
+}
+
+/* h6: 24px, 400 */
+body h6 {
+    font-size: var(--font-size-sm-semibold);
+    font-weight: var(--font-weight-sm-semibold);
+}
+
+/* Links or Extra small heading with bold: 14px, 600 */
+.text-header {
+    font-size: var(--font-size-xs-regular);
+    font-weight: var(--font-weight-xs-regular);
+}
+
+/* Paragraph or small heading: 16px, 400 */
+/* .    {
+    font-size: var(--font-size-xs-semibold);
+    font-weight: var( --font-weight-xs-semibold);
+} */
+
+.button {
+    color: var(--white-color);
+    text-transform: uppercase;
+    letter-spacing: .3px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+/* .button:hover {
+    background-color: var(--secondary-color);
+} */
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* .button.secondary {
+    background-color: var(--secondary-color);
+}
+
+.button.secondary:hover {
+    background-color: var(--primary-color);
+} */
+
+.border-color-white {
+    border: 1px solid var(--white-color);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.main-section-wrapper {
+    margin-top: 72px;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.cm-badge.badge {
+    border: 1px solid var(--primary-color);
+    padding: 5px 15px;
+}
+
+/* Filter Design */
+
+.filter-design {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--grey-color);
+    margin-bottom: 30px;
+}
+
+.temple-about-page .card-content{
+    padding: 20px !important;
+    background-color: var(--offwhite-color);
+    border-radius: 8px;
+    border: 1px solid #cccc;
+}

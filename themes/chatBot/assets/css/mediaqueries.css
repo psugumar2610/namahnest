@@ -1,0 +1,365 @@
+/* ==========================================================================
+    Author: Devarajan, Sugumar Parthasarathy
+    Description: Custom CSS for Responsive media queries styling.
+========================================================================== */
+
+/* ==========================================================================
+    1. Extra Small Devices (phones, <576px)
+========================================================================== */
+@media (max-width: 575.98px) {
+     body .main-section-wrapper {
+          margin-top: 0;
+     }
+     .hero-banner .main-layout-wrapper .article-content-wrapper h1 {
+          font-size: 25px;
+          line-height: 40px;
+          text-align: center;
+          margin-top: 25px;
+     }
+     .hero-banner .main-layout-wrapper .article-content-wrapper p {
+          font-size: 20px;
+          line-height: 32px;
+          font-weight: 400;
+          text-align: center;
+          margin: 25px;
+     }
+     body .cards-container .card {
+          max-height: 100%;
+          min-height: 100%;
+     }
+     body .button-container {
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 36px;
+          flex-direction: column;
+     }
+     .media-wrapper img {
+          width: 50%;
+     }
+     .media-wrapper {
+          text-align: center;
+     }
+     body .container {
+          padding-left: 20px;
+          padding-right: 20px;
+     }
+     body .article-header {
+          font-weight: 600;
+          font-size: 28px !important;
+          line-height: 41px !important;
+          margin-top: 0px;
+          margin-bottom: 30px;
+          padding-right: 0 !important;
+     }
+     .cards-container {
+          margin-bottom: 25px;
+     }
+     .transparent-btn,
+     .primary-btn {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 20px;
+     }
+     .cm-solution-card {
+          flex-direction: column !important;
+     }
+     .solutions-page .card-image {
+          max-width: 100%;
+     }
+     .blog-list-wrapper {
+          margin-top: 30px !important;
+     }
+     .solutions-page .card-content h2 {
+          font-size: 20px;
+     }
+     .solutions-page .card-content p {
+          font-size: 14px;
+     }
+     .solutions-page .features li,
+     .blog-lists-page .article-header {
+          padding-top: 0px;
+          padding-bottom: 20px;
+     }
+     .blog-list-page .card-title {
+          font-size: 20px;
+     }
+     .blog-list-wrapper .card .card-text {
+          font-size: 13px;
+     }
+     .highlight pre {
+          width: 100%;
+     }
+     h6 {
+          width: 100%;
+     }
+}
+
+/* ==========================================================================
+    2. Only screen and (max-width: 600px) - override for images and h1
+========================================================================== */
+@media only screen and (max-width: 600px) {
+
+     .hero-banner .main-layout-wrapper h1 {
+          font-size: 16px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+          line-height: 25px;
+     }
+     .how-it-wroks-section p {
+          display: block;
+     }
+     .how-it-wroks-section {
+          margin: 0 5%;
+     }
+     .two-layout-card .cards-container .card {
+          min-height: 50vh;
+          max-height: 50vh;
+     }
+}
+
+/* ==========================================================================
+    3. Small Devices (landscape phones, 576px and up)
+========================================================================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+     body .main-section-wrapper {
+          margin-top: 0;
+     }
+     .hero-banner .main-layout-wrapper .article-content-wrapper h1 {
+          font-size: 28px;
+          line-height: 50px;
+          text-align: center;
+     }
+     .hero-banner .main-layout-wrapper .article-content-wrapper p {
+          font-size: 20px;
+          line-height: 32px;
+          font-weight: 400;
+          text-align: center;
+     }
+     body .button-container {
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 36px;
+          flex-direction: column;
+     }
+     .media-wrapper img {
+          width: 50%;
+     }
+     .media-wrapper {
+          text-align: center;
+     }
+     body .container {
+          padding-left: 45px;
+          padding-right: 45px;
+     }
+     body .article-header {
+          font-weight: 600;
+          font-size: 28px !important;
+          line-height: 41px !important;
+          margin-top: 35px;
+          margin-bottom: 0;
+     }
+     .cards-container {
+          margin-bottom: 25px;
+     }
+     .transparent-btn,
+     .primary-btn {
+          text-align: center;
+          width: 100%;
+          margin-bottom: 20px;
+     }
+}
+
+/* ==========================================================================
+    4. General: Solutions page card layout for <= 768px
+========================================================================== */
+@media screen and (max-width: 768px) {
+     .solutions-page .card {
+          flex-direction: column;
+     }
+     .solutions-page .card-content,
+     .card-image {
+          max-width: 100%;
+     }
+     .solutions-page .card-content {
+          padding: 24px;
+     }
+}
+
+/* ==========================================================================
+    5. Responsive layout for main wrapper with TOC and blog meta on <= 768px
+========================================================================== */
+@media screen and (max-width: 768px) {
+     .main-wrapper-with-toc {
+          flex-direction: column;
+          padding: 1.25rem;
+     }
+     .main-content-area {
+          width: 100%;
+     }
+     .toc-sidebar {
+          width: 100%;
+          position: static;
+          border-left: none;
+          border-top: 0.0625rem solid var(--toc-border-color);
+          margin-top: 1.25rem;
+          display: none;
+     }
+     .blog-meta {
+          font-size: 0.8125rem;
+          flex-direction: column;
+     }
+     .blog-meta span {
+          display: block;
+          margin-bottom: 0.3125rem;
+     }
+     .blog-filters {
+          flex-wrap: wrap;
+     }
+     input#blogSearch {
+          min-width: 100%;
+     }
+     .blog-filters input, .blog-filters select, .clear-all-btn {
+         min-width: 100%;
+     }
+}
+
+/* ==========================================================================
+    6. Hide Mobile Toggle & Menu on Desktop
+========================================================================== */
+@media (min-width: 991px) {
+     .mobile-menu {
+          display: none !important;
+     }
+     .mobile-menu-toggle {
+          display: none;
+     }
+}
+
+/* ==========================================================================
+    7. Mobile View Styles (max-width: 990px)
+========================================================================== */
+@media (max-width: 990px) {
+     .nav.menu {
+          display: block;
+     }
+     .header .logo {
+          margin-top: 0;
+          width: 130px;
+     }
+     .inner {
+          margin-top: 17px;
+     }
+     .header .nav li {
+          width: 100%;
+          display: block;
+          text-align: center;
+     }
+     .header .nav li a {
+          padding: 10px;
+     }
+     /* .mobile-hero-space {
+          margin-top: 110px;
+     } */
+}
+
+/* ==========================================================================
+    8. Blog Template and TOC Sidebar (max-width: 576px)
+========================================================================== */
+@media (max-width: 768px) {
+     :root {
+          --font-size-xl-bold: 38px;
+          --font-weight-xl-bold: 700;
+          --font-size-lg-regular: 32px;
+          --font-weight-lg-regular: 700;
+          --font-size-md-regular: 22px;
+          --font-weight-md-regular: 600;
+          --font-size-md-semibold: 22px;
+          --font-weight-md-semibold: 400;
+          --font-size-sm-regular: 18px;
+          --font-weight-sm-regular: 600;
+          --font-size-sm-semibold: 18px;
+          --font-weight-sm-semibold: 400;
+          --font-size-xs-regular: 16px;
+          --font-weight-xs-regular: 400;
+          --font-size-xxs-regular: 14px;
+          --font-weight-xxs-regular: 400;
+          --font-size-xs-semibold: 14px;
+          --font-weight-xs-semibold: 600;
+     }
+     .hero-banner .main-layout-wrapper .banner-title {
+          line-height: 50px;
+     }
+     .article-content-wrapper .button-container {
+          margin-top: 25px;
+     }
+     .button {
+          text-align: center;
+          width: 100%;
+          line-height: 36px;
+          text-decoration: none;
+          margin-bottom: 20px;
+          display: block;
+     }
+     .mobile-screens-none {
+          display: none;
+     }
+     .article-wrapper h4,
+     .article-wrapper h6,
+     .article-content-wrapper h6 {
+          line-height: 30px;
+     }
+     .article-content-wrapper h6 {
+          text-align: center;
+          width: 100% !important;
+     }
+     .header {
+          padding: 10px 0;
+     }
+     .solutions-page .features li {
+          margin-bottom: 0;
+          font-size: 12px;
+     }
+     .solutions-page .card-image {
+          display: none;
+     }
+     .blog-content h1 {
+          line-height: 45px;
+          font-size: 30px;
+     }
+     .main-wrapper-with-toc {
+          padding: 0;
+     }
+     .blog-content h2 {
+          font-size: 24px;
+          line-height: 36px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+     }
+     .blog-content h4 {
+          font-size: 20px;
+          line-height: 30px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+     }
+}
+
+/* ==========================================================================
+    9. Empty Media Queries for Future Use
+========================================================================== */
+@media (max-width: 768px) {
+     /* medium devices (md) */
+}
+@media (max-width: 992px) {
+     /* large devices (lg) */
+}
+@media (max-width: 1200px) {
+     /* extra large devices (xl) */
+}
+@media (max-width: 1400px) {
+     /* extra extra large devices (xxl) */
+}

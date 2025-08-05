@@ -1,0 +1,7 @@
+<div class="code-container">
+  <div class="code-header">
+    <span class="code-title">{{ .Get "title" }}</span>
+    <button class="copy-btn" onclick="copyToClipboard(this)"><i class="bi bi-clipboard"></i></button>
+  </div>
+  <pre><code class="language-{{ .Get "lang" }}">{{ .Inner | safeHTML }}</code></pre>
+</div>

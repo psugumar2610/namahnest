@@ -1,0 +1,25 @@
+{{ $styles := resources.Concat "css/bundle.css" (slice (resources.Get "css/normalize.css") (resources.Get "css/landingpage.css") (resources.Get "css/blog.components.css") (resources.Get "css/tntemple.css") (resources.Get "css/blog.template.css") (resources.Get "css/mediaqueries.css") (resources.Get "css/bootstrap.min.css")) | minify }}
+
+{{- if eq hugo.Environment "development" }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
+{{- else }}
+  {{ $stylesProd := $styles | fingerprint }}
+  <link rel="stylesheet" href="{{ $stylesProd.RelPermalink }}" integrity="{{ $stylesProd.Data.Integrity }}" crossorigin="anonymous">
+{{- end }}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<!-- Load bootstrap-icons in both dev and prod -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="/css/icons/glyphter-icons.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<link href="https://cdn.jsdelivr.net/gh/PrismJS/prism-themes@master/themes/prism-ghcolors.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
