@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Author: Devarajan, Sugumar Parthasarathy
+   Description: Custom CSS for Blog Pages styling.
+========================================================================== */
+
+/* Blog related styles start here */
+
+/* Blog code related styles start here */
+
+.blog-content pre[class*="language-"] {
+    background-color: var(--code-bg-color);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    overflow-x: auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0;
+    padding-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.blog-content .token.keyword,
+.blog-content .token.entity,
+.blog-content .token.url,
+.blog-content .token.symbol,
+.blog-content .token.number,
+.blog-content .token.boolean,
+.blog-content .token.variable,
+.blog-content .token.constant,
+.blog-content .token.property,
+.blog-content .token.regex,
+.blog-content .token.inserted {
+    color: var(--code-block-color);
+    font-weight: 500;
+}
+
+.blog-content p {
+    margin: 0.625rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--black-color);
+    padding: 0;
+}
+
+.blog-content h1 {
+    text-transform: capitalize;
+    line-height: 70px;
+}
+
+.blog-content h2 {
+    color: var(--color-gray-900);
+    font-size: 1.75rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+.blog-content h3 {
+    color: var(--color-gray-900);
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+    margin-top: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.blog-content h4 {
+    font-size: 20px;
+    line-height: 1.25rem;
+    color: var(--black-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.blog-content h5 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.components-styles h2 strong {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.code-container {
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+.code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--code-header-color);
+  padding: 8px 12px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.components-styles #blog-content p img {
+  width: 44%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#try-now-button a {
+    display: inline-block;
+    text-transform: uppercase;
+    color: var(--white-color);
+    background: var(--secondary-color);
+    padding: 6px 12px;
+    border-radius: 25px;
+    letter-spacing: 0.3px;
+    margin-bottom: 25px;
+}
+
+/* Blog code related styles start here */
+
+/* Blog table styles start here */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  margin: 1em 0;
+  background-color: #fff;
+  border: 1px solid #d0d7de;
+}
+
+th, td {
+  padding: 12px 16px;
+  border: 1px solid #d0d7de;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead {
+  background-color: #f6f8fa;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* Blog table styles end here */
+
+/* Blog related styles start here */

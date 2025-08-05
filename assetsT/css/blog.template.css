@@ -1,0 +1,142 @@
+/* ==========================================================================
+    Author: Devarajan, Sugumar Parthasarathy
+    Description: Custom CSS for Blog Template styling.
+========================================================================== */
+
+:root {
+     --toc-bg-color: #f9f9f9;
+     --toc-border-color: #ddd;
+     --hero-overlay-color: rgba(0, 0, 0, 0.3);
+     --progress-bar-bg: #f3f3f3;
+     --progress-bar-color: var(--secondary-color);
+     --meta-color: #fff;
+}
+
+.main-wrapper-with-toc {
+     display: flex;
+     align-items: flex-start;
+     gap: 1.25rem;
+     padding: 1.875rem 1.25rem 0;
+     max-width: 94%;
+     margin: 0 auto;
+}
+
+.main-content-area {
+     flex-grow: 1;
+}
+
+.toc-sidebar {
+     position: -webkit-sticky; /* Safari */
+     position: sticky;
+     top: 0rem;
+     max-width: 25%;
+     min-width: 25%;
+     padding: 1.25rem;
+     background-color: var(--toc-bg-color);
+     border-left: 0.0625rem solid var(--toc-border-color);
+     height: fit-content;
+     font-size: 0.875rem;
+}
+
+.toc-sidebar .toc-title {
+     font-weight: bold;
+     margin-bottom: 0.625rem;
+}
+
+.toc-sidebar ul {
+     list-style: none;
+     padding-left: 0;
+}
+
+.toc-sidebar li {
+     margin: 0.8125rem 0;
+}
+
+.toc-sidebar a {
+     text-decoration: none;
+     color: #333;
+     transition: all 0.2s ease;
+}
+
+.toc-sidebar a:hover,
+.toc-sidebar a.active {
+     color: var(--progress-bar-color);
+}
+
+.toc-sidebar a.active {
+     font-weight: bold;
+}
+
+.progress-bar-wrapper {
+     width: 100%;
+     background-color: var(--progress-bar-bg);
+     height: 0.3125rem;
+     position: absolute;
+     top: 0 !important;
+     left: 0;
+     z-index: 1000;
+}
+
+.progress-bar {
+     height: 100%;
+     background-color: var(--secondary-color);
+     width: 0%;
+     transition: width 0.1s ease-in-out;
+}
+
+.blog-meta {
+     font-size: 0.75rem;
+     color: var(--meta-color);
+     margin-top: 1.25rem;
+     margin-bottom: 0.625rem;
+}
+
+.blog-meta span {
+     margin-right: 1.25rem;
+}
+
+/* Additional Custom Styles */
+.blog-filters {
+     gap: 0.5rem;
+     /* flex-wrap: wrap; */
+}
+
+input#blogSearch {
+     min-width: 420px;
+}
+
+.blog-filters input,
+.blog-filters select,
+.clear-all-btn {
+     min-width: 200px;
+     min-height: 50px;
+     border-radius: 6px;
+     border: 1px solid var(--primary-color);
+}
+
+.pagination-container {
+     min-height: 50px;
+     border: 1px solid var(--primary-color);
+     border-radius: 3px;
+     outline: none;
+}
+
+.filter-design .btn-primary {
+     color: var(--white-color);
+     background-color: var(--primary-color);
+     border-color: var(--primary-color);
+}
+
+.clear-all-btn {
+     line-height: initial;
+     border: none;
+}
+
+.pagination-container button {
+     min-width: 38px;
+}
+
+.btn-disabled {
+     pointer-events: none;
+     opacity: 0.5;
+}
