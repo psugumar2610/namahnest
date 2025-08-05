@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+  <head>
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+
+    <!-- End Google Tag Manager (noscript) -->
+
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  </body>
+</html>

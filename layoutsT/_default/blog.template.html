@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+
+    <!-- Progress Bar for Reading -->
+    <div class="progress-bar-wrapper">
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <!-- Main Content with TOC Sidebar -->
+    <main class="main-wrapper-with-toc">
+        <section id="th-templecourse-content">
+            <div class="container">
+                    <!-- Content Area -->
+                     <div class="tms-asta-lingam row">
+ <div class="col-md-9">
+                        <div class="th-templecourse-content-area">
+                            <div class="th-templecourse-container th-templecourse-details">
+                                <div class="th-templelatest-course-single">
+                                    <div class="th-templelatest-course-single-content">
+                                        <h2><a href="#">{{ .Params.astaLingam.Swamy }}</a></h2>
+                                        <h4></h4>
+                                        <ul>
+                                            <li><span>Direction:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.Direction }}</span></li>
+                                            <li><span>Consecrated by:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.ConsecratedBy }}</span></li>
+                                            <li><span>Location:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.Location }}</span></li>
+                                            <li><span>Divine Blessings:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.DivineBlessings }}</span></li>
+                                            <li><span>Vehicle:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.Vehicle }}</span></li>
+                                            <li><span>Associated Planets:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.AssociatedPlanets }}</span></li>
+                                            <li><span>Zodiac Signs:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.ZodiacSigns }}</span></li>
+                                            <li><span>Weapon:</span> <span style="color: #281456; font-weight: 600;">{{ .Params.astaLingam.Weapon }}</span></li>
+                                        </ul>
+
+<div class="asta-lingam-content">
+{{ .Content }}
+
+</div>
+                                                                           </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="col-md-3">
+                        <div class="img-wrappeer-sidenav"></div>
+                            <img src="https://w0.peakpx.com/wallpaper/363/786/HD-wallpaper-mahadev-shiva-god-shivan.jpg" style="width: 100%; margin-bottom: 20px;" alt="Responsive image">
+                            <img src="https://i.pinimg.com/736x/0e/2f/c0/0e2fc0ce2ffc50554ae43d39d223da1f.jpg" style="width: 100%; margin-bottom: 20px;" alt="Responsive image">
+                    </div>
+                </div>
+                <!-- Image Sidebar -->
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer" style="margin-top: 75px;">
+        {{ partial "footer.html" . }}
+    </footer>
+</body>
+</html>

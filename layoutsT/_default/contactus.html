@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.send("service_jd53v0r","template_eyzbvp8");
+</script>
+<script>
+  function SendMail() {
+    var params = {
+      name: document.getElementById("name").value,
+      email: document.getElementById("email").value,
+      message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_jd53v0r", "template_eyzbvp8", params)
+      .then(function (res) {
+        alert("Success! " + res.status);
+      }, function (error) {
+        alert("Failed to send email. Please try again.");
+        console.error("EmailJS error:", error);
+      });
+  }
+</script>
+
+</script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- hero-banner Area -->
+    <section class="main-section-wrapper home-blogs-section mt-5">
+            <div class="ls-layout-wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="article-content-wrapper text-center">
+                                <h4 class="color-gray-900 col-12 mb-4 text-center">Contact Us</h4>
+                                <h6 class="color-black text-center col-12 mb-5 w-75 mx-auto">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  Ut enim ad minim veniam, quis nostrud exercitation.
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                      <div class="col-md-8 col-lg-6">
+                        <form method="POST" action="#" class="p-4 rounded shadow-sm bg-white">
+                          <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your full name" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" required>
+                          </div>
+                          <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                          </div>
+                          <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg" onclick="sendmail()">Send Message</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- End hero-banner Area -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="footer" style="margin-top: 75px;">
+    {{ partial "footer.html" . }}
+  </footer>
+
+  <!-- Accordion Script -->
+</body>
+
+</html>

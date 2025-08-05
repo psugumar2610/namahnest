@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<head>
+    {{ partial "head.html" . }}
+</head>
+<body>
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+    <main>
+        <section class="solutions-page main-section-wrapper temple-about-page">
+            <div class="hw-main-layout mobile-hero-space">
+                    <div class="blog-list-wrapper">
+                        <div class="container">
+                            <div class="article-content-wrapper text-center">
+                                <h2 class="color-gray-900 col-12 mb-4 text-center">{{ .Params.top.Header }}</h2>
+                                <h6 class="color-black text-center col-12 mb-5 w-75 mx-auto">{{ .Params.top.SubHeader }}</h6>
+                            </div>
+                            <!-- {{ range .Params.cards }}
+                            <div class="cm-solution-card {{ .imgDirection }}">
+                                <div class="card-content">
+                                    <h2 class="color-black">{{ .title }}</h2>
+                                    <p class="color-gray-900">{{ .description }}</p>
+                                    <ul class="features">
+                                        <li class="color-black"><img src="{{ .firstRowImg }}" alt="{{ .firstRowInfo }} icon" /> {{ .firstRowInfo }}</li>
+                                        <li class="color-black"><img src="{{ .secondRowImg }}" alt="{{ .secondRowInfo }} icon" /> {{ .secondRowInfo }}</li>
+                                        <li class="color-black"><img src="{{ .thirdRowImg }}" alt="{{ .thirdRowInfo }} icon" /> {{ .thirdRowInfo }}</li>
+                                        <li class="color-black"><img src="{{ .fourthRowImg }}" alt="{{ .fourthRowInfo }} icon" /> {{ .fourthRowInfo }}</li>
+                                    </ul>
+                                    <a href="/tools" class="button bg-color-secondary mr-3">{{ .trialBtn }}</a>
+                                </div>
+                                <div class="card-image">
+                                    <img src="{{ .image }}" alt="Hacker at desk" />
+                                </div>
+                            </div>
+                            {{ end }} -->
+                            {{ range .Params.cards }}
+                            <div class="cm-solution-card-v1">
+                                <div class="card-content p-0">
+                                    <h5 class="card-title color-primary mt-0">{{ .title }}</h5>
+                                    <p class="color-gray-900 mt-3">{{ .description }}</p>
+                                    <a  href="{{ .basetest }}" class="button bg-color-primary border-color-white">Read More</a>
+                                </div>
+                            {{ end }}
+                           </div>
+                    </div>
+            </div>
+        </section>
+        <!--/ End hero-banner Area -->
+
+<!-- <div class="cm-sol-bottom">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="article-content-wrapper pt-lg-5 mt-lg-2 mb-lg-5">
+                <h3 data-aos="fade-up" class="color-gray-900 banner-title mb-3">{{ .Params.bottom.Header }} </h3>
+                <h6 data-aos="fade-up" class="color-gray-900 banner-subtitle cm-sol-bottom-info">{{ .Params.bottom.subHeader }}</h6>
+                <div class="button-container">
+                    <a href="#" class="button bg-color-secondary mr-lg-3">{{ .Params.bottom.buttonText }}</a>
+                    <a href="#" class="button bg-color-primary border-color-white">{{ .Params.bottom.buttonTrial }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div> -->
+    </main>
+    <footer id="footer" class="footer">
+        {{ partial "footer.html" . }}
+    </footer>
+</body>
+
+</html>

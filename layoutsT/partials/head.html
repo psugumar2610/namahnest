@@ -1,0 +1,44 @@
+<!-- SEO Meta Tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="robots" content="index, follow">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="icon" type="image/svg+xml" href="/favicon.ico">
+
+<!-- Open Graph Meta Tags -->
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ with .Params.Image }}{{ . }}{{ else }}/website-images/brand-logo.svg{{ end }}">
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta name="twitter:image" content="{{ with .Params.Image }}{{ . }}{{ else }}/website-images/brand-logo.svg{{ end }}">
+
+<!-- Ensure all <img> tags in content use alt text for accessibility and SEO -->
+<!-- Example: <img src="..." alt="Descriptive text"> -->
+
+<!-- Heading hierarchy: Use only one <h1> per page, followed by <h2>, <h3>, etc. -->
+
+<!-- JSON-LD Structured Data for Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Cybamatica",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ "/website-images/brand-logo.svg" | absURL }}",
+  "sameAs": [
+    "https://www.linkedin.com/company/cybamatica/"
+  ]
+}
+</script>
+
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}

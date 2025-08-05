@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    {{ partial "header.html" . }}
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- hero-banner Area -->
+    <section class="caard-section blog-lists-page main-section-wrapper">
+      <div class="hw-main-layout mobile-hero-space">
+        <!-- Start Single hero-banner -->
+        <div class="blog-list-container">
+          <div class="blog-list-wrapper">
+            <div class="container">
+              <h3 class="article-header mb-0">Tools</h3>
+              <app-root route="sharedip"></app-root>
+              {{ partial "ngjs.html" . }}
+            </div>
+          </div>
+        </div>
+        <!-- End Single hero-banner -->
+      </div>
+    </section>
+    <!-- End hero-banner Area -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="footer" style="margin-top: 75px;">
+    {{ partial "footer.html" . }}
+  </footer>
+
+  <!-- Accordion Script -->
+</body>
+
+</html>
